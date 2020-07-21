@@ -1,0 +1,17 @@
+i {
+    color: white;
+}
+
+.error {
+    background-color: #FEDFDF ;
+    border: solid 1px #FFBEBE;
+    color: #990C0C;
+}
+
+.row {
+    margin-bottom: .2rem
+}
+
+.payment-btn {
+    background-color: #6C757D;
+}
