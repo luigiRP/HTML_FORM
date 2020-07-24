@@ -21,14 +21,17 @@
     </div>
 
 <!------------------------------------------------- Cuerpo Formulario ------------------------------->
-    <form action="/https://www.w3schools.com/html/html_forms.asp">
+    <form >
         <div class="container border pb-5 pt-1" action="/www.google.com">
 
         <!-------------------------- Mensaje de Error  --------------------------->
 
-            <div class="row px-3 py-3 d-flex">
-                <div class="col-12 rounded pt-2 error">
-                    <p class="pt-1"><strong>Some fields are missing</strong> </p>
+            <div class="row px-3 py-3 d-flex" >
+                <div class="col-12 rounded pt-2 error" style="display: none" id="error">
+                    <p class="pt-1" ><strong>Some fields are missing</strong> </p>
+                </div>
+                <div class="col-12 rounded pt-2 error" style="display: none" id="succes">
+                    <p class="pt-1" ><strong>Submitted successfully!</strong> </p>
                 </div>
             </div>
 
@@ -37,17 +40,17 @@
             <div class="row" d-flex>
                 <div class="col-5">
                     <label  for="CCN"> Card # </label>
-                    <input class="form-control form-control-sm" type="number" placeholder="XXXXXXXXXXXXXXXX" required>
+                    <input class="form-control form-control-sm" type="number" placeholder="XXXXXXXXXXXXXXXX" name="CCN">
                 </div>
                 <div class="col-3">
                     <label  for="CVC">CVC #</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="000" required>
+                    <input class="form-control form-control-sm" type="number" placeholder="000" name="CVC" >
                 </div>
                 <div class="col-4">
                     <label  for="Money">Amount</label>
                     <div class="amountbox d-flex">
                         <label class="pr-1" for="money2" >$</label>
-                        <input class="form-control form-control-sm" type="number" placeholder="Amount" required>
+                        <input class="form-control form-control-sm" type="number" placeholder="Amount" name="money2">
                     </div>
                     
                 </div>
@@ -58,11 +61,11 @@
             <div class="row">
                 <div class="col-6 ">
                     <label for="Name" >First Name</label>
-                    <input type="text" class="form-control form-control-sm" required>
+                    <input type="text" class="form-control form-control-sm" name="Name" >
                 </div>
                 <div class="col-6">
                     <label for="LastName" >Last name</label>
-                    <input type="text" class="form-control form-control-sm" required>
+                    <input type="text" class="form-control form-control-sm" name="LastName" >
                 </div>
             </div>
 
@@ -71,11 +74,11 @@
             <div class="row">
                 <div class="col-6">
                     <label for="address">City</label>
-                    <input type="text" class="form-control form-control-sm" required>
+                    <input type="text" class="form-control form-control-sm" name="address">
                 </div>
                 <div class="col-3">
                     <label for="state">State</label>
-                    <select class="form-control form-control-sm" name="state" id="listOfStates" required>
+                    <select value="" class="form-control form-control-sm" name="state" id="listOfStates" >
                         <option selected>Pick a state</option>
                         <option>Solido</option>
                         <option>Liquido</option>
@@ -88,7 +91,7 @@
                 </div>
                 <div class="col-3">
                     <label for="PostCode">Postal Code</label>
-                    <input type="number" class="form-control form-control-sm" required>
+                    <input type="number" class="form-control form-control-sm" name="PostCode">
                 </div>
             </div>
         
@@ -148,7 +151,7 @@
         </div>
     </form>
 
-
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 

@@ -8,6 +8,12 @@ i {
     color: #990C0C;
 }
 
+#succes {
+    background-color: #C0F4BD ;
+    border: solid 1px #78EC62;
+    color: #22AF1B;
+}
+
 .row {
     margin-bottom: .2rem
 }
