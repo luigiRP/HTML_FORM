@@ -157,10 +157,10 @@ window.onload = () => {
             }
             else {
                 succes.style.display="none"
-                console.log(succes.style.display)
+                error.style.display="inline"
             }
 
-           console.log(display)
+           
         
         
     });
